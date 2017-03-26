@@ -9,9 +9,15 @@ import { ActivatedRoute } from '@angular/router';
 export class DirectoryComponent implements OnInit {
   /* Route paramter */
   //ninja: string;
+  ninjas = [
+  	{ name: 'Yoshi', belt: 'black' },
+  	{ name: 'Ryu', belt: 'red' },
+  	{ name: 'Crystal', belt: 'purple' }
+  ];
 
   constructor() {}
 
+  // Route Params
   /*constructor(private route: ActivatedRoute) {
   	this.ninja = route.snapshot.params['ninja'] ;
   }*/
