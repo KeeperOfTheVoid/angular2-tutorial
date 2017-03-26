@@ -1,0 +1,30 @@
+<p>
+  {{homeTitle}}
+</p>
+<div *ngIf="false">
+	<!-- Kind of like transclusion from Angular 1 -->
+	<!-- <ng-content></ng-content>  -->
+
+	<!-- Property Binding -->
+	<input [value]="myString" />
+	<!-- attr.required gives more predictable behavior because it initializes a validator for control -->
+	<input [attr.required]="myBoolean" />
+
+	<!-- Event Binding -->
+	<button (click)="alertMe('hey there')">Click me</button>
+	<br /><br />
+
+	<!-- 2 way binding -->
+	<label>Name:</label>
+	<input [(ngModel)]="ninja.name" />
+	<label>Belt:</label>
+	<input [(ngModel)]="ninja.belt" />
+	<p>{{ninja.name}}</p>
+	<p>{{ninja.belt}}</p>
+</div>
+
+<!-- Custom Property Binding & @Input -->
+<p>{{ninja.name}}</p>
+<p>{{ninja.belt}}</p>
+
+<button (click)="fireYellEvent($event)">Hit Me</button>
