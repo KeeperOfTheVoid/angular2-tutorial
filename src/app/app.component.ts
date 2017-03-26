@@ -9,12 +9,12 @@ import { HomeComponent } from './home/home.component' // Might not need this...
 })
 export class AppComponent {
   title = 'app works!';
-  ninja = {
+  /*ninja = {
   	name: "Ryu",
   	belt: "Red"
   };
 
   yell(e) {
   	alert("I am yelling!!");
-  }
+  }*/
 }
