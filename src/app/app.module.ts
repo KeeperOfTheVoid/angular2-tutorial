@@ -11,6 +11,7 @@ import { DirectoryComponent } from './directory/directory.component';
 const appRoutes: Routes = [
       { path: '', component: HomeComponent },
       { path: 'directory', component: DirectoryComponent },
+      //{ path: 'directory/:ninja', component: DirectoryComponent },
       //{ path: '**', component: PageNotFoundComponent }
 ];
 
