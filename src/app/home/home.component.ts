@@ -28,6 +28,10 @@ export class HomeComponent implements OnInit {
     this.onYell.emit(e);
   }*/
 
+  alertMe(val) {
+    alert(val);
+  }
+
   constructor() { }
 
   ngOnInit() {
