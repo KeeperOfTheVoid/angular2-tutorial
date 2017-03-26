@@ -1,7 +1,7 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
-  inputs: ["ninja"],
+  /*inputs: ["ninja"],*/
   selector: 'home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
@@ -9,13 +9,7 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 export class HomeComponent implements OnInit {
   homeTitle = "Welcome to the homepage...";
 
-  @Output() onYell = new EventEmitter();
-
-  fireYellEvent(e) {
-  	this.onYell.emit(e);
-  }
-
-  /* Variables for Property Binding, Event Binding, 2-way Binding */
+  /* Variables for Property Binding, Event Binding, 2-way Binding, Custom Event Binding */
 
   /*myString = "I like Chicken";
   myBoolean = true;
@@ -26,6 +20,12 @@ export class HomeComponent implements OnInit {
 
   alertMe(val) {
   	alert(val);
+  }
+
+  @Output() onYell = new EventEmitter();
+
+  fireYellEvent(e) {
+    this.onYell.emit(e);
   }*/
 
   constructor() { }
