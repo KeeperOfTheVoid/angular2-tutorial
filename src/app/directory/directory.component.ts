@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
+import { FilterPipe } from '../filter/filter.pipe';
+
 @Component({
   selector: 'app-directory',
   templateUrl: './directory.component.html',
